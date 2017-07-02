@@ -1,5 +1,5 @@
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Futura', serif;
 }
 
 form {
@@ -56,7 +56,7 @@ input:focus, textarea:focus {
 }
 
 h1, h2, h3 {
-	font-family: 'Baskerville', sans-serif;
+	font-family: 'Futura', serif;
 	letter-spacing: 1px;
 	font-weight: 300;
 	margin-bottom: 20px;
@@ -121,7 +121,7 @@ h1, h2, h3 {
 
 .hovereffect .overlay-text {
 	font-size: 1.3rem;
-	font-family: 'Baskerville', sans-serif;
+	font-family: 'Futura', serif;
 	font-weight: 300;
 	color: #000;
 	left: 50%;
