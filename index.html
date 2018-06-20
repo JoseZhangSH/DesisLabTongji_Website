@@ -1,152 +1,212 @@
-<!DOCTYPE html>
-<html lang="en">
-  <!-- Head tag -->
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html>
+<head>
+    <style type="text/css">
+        body
+        {
+            margin:0;
+            background-color: black;
+        }
+        .headLine{
+          position:relative;
+          margin:0;
+          height:2em;
+          background-color: white;
+        }
+        .imgBox{
+          position:relative;
 
-  <!-- Title -->
-  
-  <title>Jose Zhang</title>
+        }
+        .outerButtonBox{
+          position:relative;
+          height:2em;
+        }
+        .innerButtonBox{
+            margin:0;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: black;
+        }
+        .pics{
+          width: 80%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 2em;
+        }
+        .noticePics{
+          width: 95%;
+        }
+        .button {
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 4px 8px;
+            text-align: center;
+            font-size: 36;
+            display: inline-block;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .button:hover {
+            color: blue;
+        }
 
-  <!--Favicon-->
-  <link rel="icon" href="favicon/favicon.ico">
 
-  <!--Description-->
-  
+        .noticeBox{
+            margin:0 auto;
+            margin-top: 4em;
+            width:80%;
+            display: flex;
+        }
+        .noticeBox > div {
+            width:50%;
+        }
+        .hoverImageBox{
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #FC4027;
+        }
+        .hoverImageBox:hover .overlay {
+            opacity: 0.7;
+        }
+        .text {
+            font-family: sans-serif;
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
 
-  <!--Author-->
-  
-      <meta name="author" content="John Doe">
-  
-
-  <!-- Pure CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans:300,800" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="/css/styles.css">
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-  <!-- Google Analytics -->
-  
-
+        div#roll1 {
+          width: 200px;
+          height: auto;
+          position: absolute;
+        }
+        div#roll2 {
+          width: 200px;
+          height: auto;
+          position: absolute;
+        }
+        div#roll3 {
+          width: 200px;
+          height: auto;
+          position: absolute;
+        }
+        div#roll4 {
+          width: 200px;
+          height: auto;
+          position: absolute;
+        }
+    </style>
 </head>
 
+<body>
+    <div class="headLine">
+        <img src = 'imgs/ArrowUp.png' class = 'pics' style = "width:1.5em;margin:0 auto;">
+    </div>
+    <div class="imgBox">
+        <img src = 'imgs/Day1-1.png' class = 'pics' id = "pic1">
+    </div>
 
-  <body>
-  	<div class="container-fluid navbar-container m-sm-5">
-      <!-- Header -->
-      <nav class="navbar navbar-toggleable-sm navbar-light px-1 py-3 my-3 mb-sm-5">
-  <a class="navbar-brand ml-2" href="/">Jose Zhang</a>
-  <button class="navbar-toggler navbar-toggler-right py-2" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse text-center" id="navbarCollapse">
-    <ul class="navbar-nav ml-auto my-auto">
-      
-        <li class="nav-item">
-          <a class="nav-link" href="/images/About.png">About</a>
-        </li>
-      
-        <li class="nav-item">
-          <a class="nav-link" href="/images/Contact.png">Contact</a>
-        </li>
-      
-    </ul>
-    <hr class="hidden-md-up" />
-  </div>
-</nav>
+    <div class = "outerButtonBox">
+        <div class = "innerButtonBox">
+            <button class="button" id="button1" onclick="button1Function()">1</button>
+            <button class="button" id="button2" onclick="button2Function()">2</button>
+            <button class="button" id="button3" onclick="button3Function()">3</button>
+            <button class="button" id="button4" onclick="button4Function()">4</button>
+            <button class="button" id="button5" onclick="button5Function()">5</button>
+        </div>
+    </div>
 
-
-  		<div class="row">
-  			
-    <div class="col-md-6 col-12 mb-4">
-  <div class="hovereffect">
-    <a href="/2017/07/02/Cityrama/">
-      <img class="img-fluid portfolio-img" src="/images/Cityrama_Cover.png" alt="Cityrama">
-      <div class="overlay">
-        <span class="overlay-text">Cityrama</span>
-      </div>
-    </a>
-  </div>
-</div>
-
-
-    <div class="col-md-6 col-12 mb-4">
-  <div class="hovereffect">
-    <a href="/2017/07/02/TempleOfHeaven/">
-      <img class="img-fluid portfolio-img" src="/images/TempleOfHeaven_Cover.png" alt="Temple Of Heaven">
-      <div class="overlay">
-        <span class="overlay-text">Temple Of Heaven</span>
-      </div>
-    </a>
-  </div>
-</div>
-
-
-    <div class="col-md-6 col-12 mb-4">
-  <div class="hovereffect">
-    <a href="/2017/07/02/SomeoneWhoIsAlwaysSlow/">
-      <img class="img-fluid portfolio-img" src="/images/SomeoneWhoIsAlwaysSlow_Cover.png" alt="Someone Who Is Always Slow">
-      <div class="overlay">
-        <span class="overlay-text">Someone Who Is Always Slow</span>
-      </div>
-    </a>
-  </div>
-</div>
+    <div class = "noticeBox">
+        <div>
+            <div class="hoverImageBox">
+                <img src="imgs/Day1-1.png" class="noticePics">
+                <div class="overlay">
+                    <a href="https://www.w3schools.com">
+                        <div class="text">Day2</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="hoverImageBox">
+                <img src="imgs/Day1-1.png" class="noticePics">
+                <div class="overlay">
+                    <a href="https://www.w3schools.com">
+                        <div class="text">Day3</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="hoverImageBox">
+                <img src="imgs/Day1-1.png" class="noticePics">
+                <div class="overlay">
+                    <a href="https://www.w3schools.com">
+                        <div class="text">Day4</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="hoverImageBox">
+                <img src="imgs/Day1-1.png" class="noticePics">
+                <div class="overlay">
+                    <a href="https://www.w3schools.com">
+                        <div class="text">Day5</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-    <div class="col-md-6 col-12 mb-4">
-  <div class="hovereffect">
-    <a href="/2017/07/02/Stool/">
-      <img class="img-fluid portfolio-img" src="/images/Stool_Cover.png" alt="Stool">
-      <div class="overlay">
-        <span class="overlay-text">Stool</span>
-      </div>
-    </a>
-  </div>
-</div>
+    <div id="roll1"><img src="imgs/Day1-1.png" class="noticePics"></div>-->
+    <div id="roll2"><img src="imgs/Day1-1.png" class="noticePics"></div>
 
 
-    <div class="col-md-6 col-12 mb-4">
-  <div class="hovereffect">
-    <a href="/2017/07/02/Balstool/">
-      <img class="img-fluid portfolio-img" src="/images/Balstool_Cover.png" alt="Balstool">
-      <div class="overlay">
-        <span class="overlay-text">Balstool</span>
-      </div>
-    </a>
-  </div>
-</div>
+    <script src = "src/FloatingAds.js"></script>
 
 
-    <div class="col-md-6 col-12 mb-4">
-  <div class="hovereffect">
-    <a href="/2017/07/01/Drum-Dance/">
-      <img class="img-fluid portfolio-img" src="/images/DrumDance_Cover.jpg" alt="Drum Dance">
-      <div class="overlay">
-        <span class="overlay-text">Drum Dance</span>
-      </div>
-    </a>
-  </div>
-</div>
+    <script type="text/javascript">
+        function button1Function(){
+            document.getElementById("button1").style.color = "blue";
+            document.getElementById("button2").style.color = "white";
+            document.getElementById("button3").style.color = "white";
+            document.getElementById("button4").style.color = "white";
+            document.getElementById("button5").style.color = "white";
+            document.getElementById("roll1").style.opacity = 0;
+            document.body.style.backgroundImage = "url(imgs/Background1_small.jpg)";
+            document.body.style.backgroundTepeat = "repeat";
+            document.getElementById("pic1").src = "imgs/Day1-1.png";
+        }
+        function button2Function(){
+          document.getElementById("button1").style.color = "white";
+          document.getElementById("button2").style.color = "blue";
+          document.getElementById("button3").style.color = "white";
+          document.getElementById("button4").style.color = "white";
+          document.getElementById("button5").style.color = "white";
+          document.getElementById("roll1").style.opacity = 1;
+          document.body.style.backgroundImage = "none";
+          document.getElementById("pic1").src = "imgs/Day1-2.png";
+        }
+    </script>
 
-
-
-  		</div>
-  	</div>
-
-    <!-- After footer scripts -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-  </body>
+</body>
 </html>
