@@ -6,207 +6,94 @@
             margin:0;
             background-color: black;
         }
-        .headLine{
+        #day1{
+          width:800;
           position:relative;
-          margin:0;
-          height:2em;
-          background-color: white;
+          margin-top:5em;
+
         }
-        .imgBox{
+        #day2{
+          width:400;
           position:relative;
-
+          margin-top:5em;
+          margin-left: 45em;
         }
-        .outerButtonBox{
+        #day3{
+          width:800;
           position:relative;
-          height:2em;
+          margin-top:5em;
         }
-        .innerButtonBox{
-            margin:0;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: black;
+        #day4{
+          width:800;
+          position:relative;
+          margin-top:5em;
+          margin-left: 45em;
         }
-        .pics{
-          width: 80%;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          margin-top: 2em;
+        #day5{
+          width:800;
+          position:relative;
+          margin-top:5em;
         }
-        .noticePics{
-          width: 95%;
+        #day6{
+          width:400;
+          position:relative;
+          margin-top:5em;
+          margin-left: 45em;
         }
-        .button {
-            background-color: black;
-            border: none;
-            color: white;
-            padding: 4px 8px;
-            text-align: center;
-            font-size: 36;
-            display: inline-block;
-            text-decoration: underline;
-            cursor: pointer;
+        #day7{
+          width:800;
+          position:relative;
+          margin-top:5em;
         }
-        .button:hover {
-            color: blue;
+        #chapter3{
+          width:800;
+          position:relative;
+          margin-top:5em;
+          margin-left: 45em;
         }
-
-
-        .noticeBox{
-            margin:0 auto;
-            margin-top: 4em;
-            width:80%;
-            display: flex;
-        }
-        .noticeBox > div {
-            width:50%;
-        }
-        .hoverImageBox{
-            position: relative;
-        }
-        .overlay {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
-            width: 100%;
-            opacity: 0;
-            transition: .5s ease;
-            background-color: #FC4027;
-        }
-        .hoverImageBox:hover .overlay {
-            opacity: 0.7;
-        }
-        .text {
-            font-family: sans-serif;
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            text-align: center;
-        }
-
-        div#roll1 {
-          width: 200px;
-          height: auto;
-          position: absolute;
-        }
-        div#roll2 {
-          width: 200px;
-          height: auto;
-          position: absolute;
-        }
-        div#roll3 {
-          width: 200px;
-          height: auto;
-          position: absolute;
-        }
-        div#roll4 {
-          width: 200px;
-          height: auto;
-          position: absolute;
+        #Easteregg{
+          width:800;
+          position:relative;
+          margin-top:5em;
         }
     </style>
 </head>
 
 <body>
-    <div class="headLine">
-        <img src = 'imgs/ArrowUp.png' class = 'pics' style = "width:1.5em;margin:0 auto;">
-    </div>
-    <div class="imgBox">
-        <img src = 'imgs/Day1-1.png' class = 'pics' id = "pic1">
-    </div>
-
-    <div class = "outerButtonBox">
-        <div class = "innerButtonBox">
-            <button class="button" id="button1" onclick="button1Function()">1</button>
-            <button class="button" id="button2" onclick="button2Function()">2</button>
-            <button class="button" id="button3" onclick="button3Function()">3</button>
-            <button class="button" id="button4" onclick="button4Function()">4</button>
-            <button class="button" id="button5" onclick="button5Function()">5</button>
-        </div>
-    </div>
-
-    <div class = "noticeBox">
-        <div>
-            <div class="hoverImageBox">
-                <img src="imgs/Day1-1.png" class="noticePics">
-                <div class="overlay">
-                    <a href="https://www.w3schools.com">
-                        <div class="text">Day2</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="hoverImageBox">
-                <img src="imgs/Day1-1.png" class="noticePics">
-                <div class="overlay">
-                    <a href="https://www.w3schools.com">
-                        <div class="text">Day3</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="hoverImageBox">
-                <img src="imgs/Day1-1.png" class="noticePics">
-                <div class="overlay">
-                    <a href="https://www.w3schools.com">
-                        <div class="text">Day4</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="hoverImageBox">
-                <img src="imgs/Day1-1.png" class="noticePics">
-                <div class="overlay">
-                    <a href="https://www.w3schools.com">
-                        <div class="text">Day5</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+<a href="Day1.html">
+    <img id="day1" src="imgs/index/day1.gif">
+</a>
+<a href="Day2.html">
+    <img id="day2" src="imgs/index/day2.gif">
+</a>
+<a href="Day3.html">
+    <img id="day3" src="imgs/index/day3.gif">
+</a>
+<a href="Day4.html">
+    <img id="day4" src="imgs/index/day4.gif">
+</a>
+<a href="Day5.html">
+    <img id="day5" src="imgs/index/day5.gif">
+</a>
+<a href="Day6.html">
+    <img id="day6" src="imgs/index/day6.gif">
+</a>
+<a href="Day7.html">
+    <img id="day7" src="imgs/index/day7.gif">
+</a>
+<a href="Chapter3.html">
+    <img id="chapter3" src="imgs/index/chapter3.gif">
+</a>
+<a href="Easteregg.html">
+    <img id="easteregg" src="imgs/index/Easteregg-1.jpg"
+</a>
 
 
-    <div id="roll1"><img src="imgs/Day1-1.png" class="noticePics"></div>-->
-    <div id="roll2"><img src="imgs/Day1-1.png" class="noticePics"></div>
 
 
-    <script src = "src/FloatingAds.js"></script>
 
 
-    <script type="text/javascript">
-        function button1Function(){
-            document.getElementById("button1").style.color = "blue";
-            document.getElementById("button2").style.color = "white";
-            document.getElementById("button3").style.color = "white";
-            document.getElementById("button4").style.color = "white";
-            document.getElementById("button5").style.color = "white";
-            document.getElementById("roll1").style.opacity = 0;
-            document.body.style.backgroundImage = "url(imgs/Background1_small.jpg)";
-            document.body.style.backgroundTepeat = "repeat";
-            document.getElementById("pic1").src = "imgs/Day1-1.png";
-        }
-        function button2Function(){
-          document.getElementById("button1").style.color = "white";
-          document.getElementById("button2").style.color = "blue";
-          document.getElementById("button3").style.color = "white";
-          document.getElementById("button4").style.color = "white";
-          document.getElementById("button5").style.color = "white";
-          document.getElementById("roll1").style.opacity = 1;
-          document.body.style.backgroundImage = "none";
-          document.getElementById("pic1").src = "imgs/Day1-2.png";
-        }
-    </script>
+
 
 </body>
 </html>

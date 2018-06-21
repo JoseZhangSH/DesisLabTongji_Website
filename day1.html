@@ -1,0 +1,231 @@
+<html>
+<head>
+    <style type="text/css">
+        body
+        {
+            margin:0;
+            background-color: black;
+        }
+        .headLine{
+          position:relative;
+          margin:0;
+          height:2em;
+          background-color: white;
+        }
+        .imgBox{
+          position:relative;
+
+        }
+        .outerButtonBox{
+          position:relative;
+          height:2em;
+        }
+        .innerButtonBox{
+            margin:0;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: black;
+        }
+        .pics{
+          width: 80%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 2em;
+        }
+        .noticePics{
+          width: 95%;
+        }
+        .button {
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 4px 8px;
+            text-align: center;
+            font-size: 36;
+            display: inline-block;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .button:hover {
+            color: blue;
+        }
+
+
+        .noticeBox{
+            margin:0 auto;
+            margin-top: 4em;
+            width:80%;
+            display: flex;
+        }
+        .noticeBox > div {
+            width:50%;
+        }
+        .hoverImageBox{
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #FC4027;
+        }
+        .hoverImageBox:hover .overlay {
+            opacity: 0.7;
+        }
+        .text {
+            font-family: sans-serif;
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        div#roll1 {
+          display: none;
+          width: 1280px;
+          height: auto;
+          position: absolute;
+        }
+        #stillImage {
+          display: none;
+          position: absolute;
+          bottom: 0;
+          right: -50em;
+          width: 100%;
+          height: 100%;
+          z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="headLine">
+        <a href="index.html">
+          <img src = 'imgs/ArrowUp.png' class = 'pics' style = "width:1.5em;margin:0 auto;">
+        </a>
+    </div>
+
+    <div id="stillImage"><img src="imgs/Day1/Day1-3Addon.gif" ></div>
+
+    <div class="imgBox">
+        <img src = 'imgs/Day1/Day1-1.png' class = 'pics' id = "pic1">
+    </div>
+
+    <div class = "outerButtonBox">
+        <div class = "innerButtonBox">
+            <button class="button" id="button1" onclick="button1Function()">1</button>
+            <button class="button" id="button2" onclick="button2Function()">2</button>
+            <button class="button" id="button3" onclick="button3Function()">3</button>
+            <button class="button" id="button4" onclick="button4Function()">4</button>
+        </div>
+    </div>
+
+    <div class = "noticeBox">
+        <div>
+            <div class="hoverImageBox">
+                <img src="imgs/Day1/Day1-2.png" class="noticePics">
+                <div class="overlay">
+                    <a href="day2.html">
+                        <div class="text">Day2</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="hoverImageBox">
+                <img src="imgs/Day1/Day1-3.png" class="noticePics">
+                <div class="overlay">
+                    <a href="day3.html">
+                        <div class="text">Day3</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="hoverImageBox">
+                <img src="imgs/Day1/Day1-3.png" class="noticePics">
+                <div class="overlay">
+                    <a href="day4.html">
+                        <div class="text">Day4</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="hoverImageBox">
+                <img src="imgs/Day1/Day1-1.png" class="noticePics">
+                <div class="overlay">
+                    <a href="day5.html">
+                        <div class="text">Day5</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="roll1"><img src="imgs/Day1/Day1-2Addon.gif"></div>
+
+    <script src = "src/FloatingAds1.js"></script>
+
+
+    <script type="text/javascript">
+        function button1Function(){
+            document.getElementById("button1").style.color = "blue";
+            document.getElementById("button2").style.color = "white";
+            document.getElementById("button3").style.color = "white";
+            document.getElementById("button4").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Day1/Day1-1.png";
+            document.getElementById("roll1").style.display = "none";
+            document.getElementById("stillImage").style.display = "none";
+            document.body.style.backgroundImage = "none";
+
+        }
+        function button2Function(){
+            document.getElementById("button1").style.color = "white";
+            document.getElementById("button2").style.color = "blue";
+            document.getElementById("button3").style.color = "white";
+            document.getElementById("button4").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Day1/Day1-2.png";
+            document.getElementById("roll1").style.display = "none";
+            document.getElementById("roll1").style.display = "block";
+            document.getElementById("stillImage").style.display = "none";
+            document.body.style.backgroundImage = "none";
+        }
+        function button3Function(){
+            document.getElementById("button1").style.color = "white";
+            document.getElementById("button2").style.color = "white";
+            document.getElementById("button3").style.color = "blue";
+            document.getElementById("button4").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Day1/Day1-3.png";
+            document.getElementById("roll1").style.display = "block";
+            document.getElementById("stillImage").style.display = "block";
+            document.body.style.backgroundImage = "none";
+
+        }
+        function button4Function(){
+            document.getElementById("button1").style.color = "white";
+            document.getElementById("button2").style.color = "white";
+            document.getElementById("button3").style.color = "white";
+            document.getElementById("button4").style.color = "blue";
+            document.getElementById("pic1").src = "imgs/Day1/Day1-3.png";
+            document.getElementById("roll1").style.display = "none";
+            document.getElementById("stillImage").style.display = "none";
+            document.body.style.backgroundImage = "url(imgs/Day1/Day1-4Addon.png)";
+            document.body.style.backgroundTepeat = "repeat";
+        }
+    </script>
+
+</body>
+</html>

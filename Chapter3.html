@@ -1,0 +1,436 @@
+<html>
+<head>
+    <style type="text/css">
+        body
+        {
+            margin:0;
+            background-color: black;
+            background-image: url(imgs/Chapter3/Chapter3-0.1Addon.jpeg);
+            background-Repeat: repeat;
+        }
+        .headLine{
+          position:relative;
+          margin:0;
+          height:2em;
+          background-color: white;
+        }
+        .imgBox{
+          position:relative;
+
+        }
+        .outerButtonBox{
+          position:relative;
+          height:2em;
+          z-index: 100;
+        }
+        .innerButtonBox{
+            margin:0;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: black;
+        }
+        .pics{
+          width: 80%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 2em;
+        }
+        .noticePics{
+          width: 95%;
+        }
+        .button {
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 4px 8px;
+            text-align: center;
+            font-size: 36;
+            display: inline-block;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .button:hover {
+            color: blue;
+        }
+
+
+        .noticeBox{
+            margin:0 auto;
+            margin-top: 4em;
+            width:80%;
+            display: flex;
+        }
+        .noticeBox > div {
+            width:50%;
+        }
+        .hoverImageBox{
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #FC4027;
+        }
+        .hoverImageBox:hover .overlay {
+            opacity: 0.7;
+        }
+        .text {
+            font-family: sans-serif;
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        div#roll1 {
+          display: none;
+          width: 100px;
+          height: auto;
+          position: absolute;
+          z-index: 3;
+        }
+        div#roll2 {
+          display: none;
+          width: 100px;
+          height: auto;
+          position: absolute;
+          z-index: 3;
+        }
+        div#roll3 {
+          display: none;
+          width: 100px;
+          height: auto;
+          position: absolute;
+          z-index: 3;
+        }
+
+        #stillImage1 {
+          display: none;
+          position: absolute;
+          width:200px;
+          top: 10em;
+          right: -5em;
+          width: 100%;
+          height: 100%;
+          z-index: 2;
+        }
+        #stillImage2 {
+          display: none;
+          position: absolute;
+          width:200px;
+          top: 10em;
+          right: -5em;
+          width: 100%;
+          height: 100%;
+          z-index: 2;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="headLine">
+      <a href="index.html">
+        <img src = 'imgs/ArrowUp.png' class = 'pics' style = "width:1.5em;margin:0 auto;">
+      </a>
+    </div>
+
+    <div id="stillImage1"><img src="imgs/Chapter3/Chapter3-0.3Addon.gif" ></div>
+    <div id="stillImage2"><img src="imgs/Chapter3/Chapter3-3Addon.gif" ></div>
+
+
+
+    <div class="imgBox">
+        <img src = 'imgs/Chapter3/Chapter3-0.1.png' class = 'pics' id = "pic1">
+    </div>
+
+    <div class = "outerButtonBox">
+        <div class = "innerButtonBox">
+            <button class="button" id="button1" onclick="button1Function()">1</button>
+            <button class="button" id="button2" onclick="button2Function()">2</button>
+            <button class="button" id="button3" onclick="button3Function()">3</button>
+            <button class="button" id="button4" onclick="button4Function()">4</button>
+            <button class="button" id="button5" onclick="button5Function()">5</button>
+            <button class="button" id="button6" onclick="button6Function()">6</button>
+            <button class="button" id="button7" onclick="button7Function()">7</button>
+            <button class="button" id="button8" onclick="button8Function()">8</button>
+            <button class="button" id="button9" onclick="button9Function()">9</button>
+            <button class="button" id="button10" onclick="button10Function()">10</button>
+            <button class="button" id="button11" onclick="button11Function()">11</button>
+        </div>
+    </div>
+
+    <div class = "noticeBox">
+        <div>
+            <div class="hoverImageBox">
+                <img src="imgs/Day1/Day1-2.png" class="noticePics">
+                <div class="overlay">
+                    <a href="https://www.w3schools.com">
+                        <div class="text">Day2</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="hoverImageBox">
+                <img src="imgs/Day1/Day1-3.png" class="noticePics">
+                <div class="overlay">
+                    <a href="https://www.w3schools.com">
+                        <div class="text">Day3</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="hoverImageBox">
+                <img src="imgs/Day1/Day1-3.png" class="noticePics">
+                <div class="overlay">
+                    <a href="https://www.w3schools.com">
+                        <div class="text">Day4</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="hoverImageBox">
+                <img src="imgs/Day1/Day1-1.png" class="noticePics">
+                <div class="overlay">
+                    <a href="https://www.w3schools.com">
+                        <div class="text">Day5</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="roll1"><img src="imgs/Chapter3/Chapter3-8Addon.gif"></div>
+    <div id="roll2"><img src="imgs/Chapter3/Chapter3-8Addon.gif"></div>
+    <div id="roll3"><img src="imgs/Chapter3/Chapter3-8Addon.gif"></div>
+
+    <script src = "src/FloatingAdsChapter3.js"></script>
+
+
+    <script type="text/javascript">
+        function button1Function(){
+            document.getElementById("button1").style.color = "blue";
+            document.getElementById("button2").style.color = "white";
+            document.getElementById("button3").style.color = "white";
+            document.getElementById("button4").style.color = "white";
+            document.getElementById("button5").style.color = "white";
+            document.getElementById("button6").style.color = "white";
+            document.getElementById("button7").style.color = "white";
+            document.getElementById("button8").style.color = "white";
+            document.getElementById("button9").style.color = "white";
+            document.getElementById("button10").style.color = "white";
+            document.getElementById("button11").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-0.1.png";
+            document.getElementById("roll1").style.display = "none";
+            document.getElementById("stillImage1").style.display = "none";
+            document.getElementById("stillImage2").style.display = "none";
+            document.body.style.backgroundImage = "url(imgs/Chapter3/Chapter3-0.1Addon.jpeg)";
+            document.body.style.backgroundRepeat = "repeat";
+
+        }
+        function button2Function(){
+            document.getElementById("button1").style.color = "white";
+            document.getElementById("button2").style.color = "blue";
+            document.getElementById("button3").style.color = "white";
+            document.getElementById("button4").style.color = "white";
+            document.getElementById("button5").style.color = "white";
+            document.getElementById("button6").style.color = "white";
+            document.getElementById("button7").style.color = "white";
+            document.getElementById("button8").style.color = "white";
+            document.getElementById("button9").style.color = "white";
+            document.getElementById("button10").style.color = "white";
+            document.getElementById("button11").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-0.2.png";
+            document.getElementById("roll1").style.display = "none";
+            document.getElementById("stillImage1").style.display = "none";
+            document.getElementById("stillImage2").style.display = "none";
+            document.body.style.backgroundImage = "none";
+        }
+        function button3Function(){
+            document.getElementById("button1").style.color = "white";
+            document.getElementById("button2").style.color = "white";
+            document.getElementById("button3").style.color = "blue";
+            document.getElementById("button4").style.color = "white";
+            document.getElementById("button5").style.color = "white";
+            document.getElementById("button6").style.color = "white";
+            document.getElementById("button7").style.color = "white";
+            document.getElementById("button8").style.color = "white";
+            document.getElementById("button9").style.color = "white";
+            document.getElementById("button10").style.color = "white";
+            document.getElementById("button11").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-0.3.png";
+            document.getElementById("roll1").style.display = "none";
+            document.getElementById("stillImage1").style.display = "block";
+            document.getElementById("stillImage2").style.display = "none";
+            document.body.style.backgroundImage = "none";
+
+        }
+        function button4Function(){
+            document.getElementById("button1").style.color = "white";
+            document.getElementById("button2").style.color = "white";
+            document.getElementById("button3").style.color = "white";
+            document.getElementById("button4").style.color = "blue";
+            document.getElementById("button5").style.color = "white";
+            document.getElementById("button6").style.color = "white";
+            document.getElementById("button7").style.color = "white";
+            document.getElementById("button8").style.color = "white";
+            document.getElementById("button9").style.color = "white";
+            document.getElementById("button10").style.color = "white";
+            document.getElementById("button11").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-1.png";
+            document.getElementById("roll1").style.display = "none";
+            document.getElementById("stillImage1").style.display = "none";
+            document.getElementById("stillImage2").style.display = "none";
+            document.body.style.backgroundImage = "none";
+        }
+        function button5Function(){
+            document.getElementById("button1").style.color = "white";
+            document.getElementById("button2").style.color = "white";
+            document.getElementById("button3").style.color = "white";
+            document.getElementById("button4").style.color = "white";
+            document.getElementById("button5").style.color = "blue";
+            document.getElementById("button6").style.color = "white";
+            document.getElementById("button7").style.color = "white";
+            document.getElementById("button8").style.color = "white";
+            document.getElementById("button9").style.color = "white";
+            document.getElementById("button10").style.color = "white";
+            document.getElementById("button11").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-2.png";
+            document.getElementById("roll1").style.display = "none";
+            document.getElementById("stillImage1").style.display = "none";
+            document.getElementById("stillImage2").style.display = "none";
+            document.body.style.backgroundImage = "url(imgs/Chapter3/Chapter3-2Addon.gif)";
+            document.body.style.backgroundRepeat = "repeat";
+        }
+        function button6Function(){
+            document.getElementById("button1").style.color = "white";
+            document.getElementById("button2").style.color = "white";
+            document.getElementById("button3").style.color = "white";
+            document.getElementById("button4").style.color = "white";
+            document.getElementById("button5").style.color = "white";
+            document.getElementById("button6").style.color = "blue";
+            document.getElementById("button7").style.color = "white";
+            document.getElementById("button8").style.color = "white";
+            document.getElementById("button9").style.color = "white";
+            document.getElementById("button10").style.color = "white";
+            document.getElementById("button11").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-3.png";
+            document.getElementById("roll1").style.display = "none";
+            document.getElementById("stillImage1").style.display = "none";
+            document.getElementById("stillImage2").style.display = "none";
+
+            document.body.style.backgroundImage = "none";
+        }
+        function button7Function(){
+            document.getElementById("button1").style.color = "white";
+            document.getElementById("button2").style.color = "white";
+            document.getElementById("button3").style.color = "white";
+            document.getElementById("button4").style.color = "white";
+            document.getElementById("button5").style.color = "white";
+            document.getElementById("button6").style.color = "white";
+            document.getElementById("button7").style.color = "blue";
+            document.getElementById("button8").style.color = "white";
+            document.getElementById("button9").style.color = "white";
+            document.getElementById("button10").style.color = "white";
+            document.getElementById("button11").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-4.png";
+            document.getElementById("roll1").style.display = "none";
+            document.getElementById("stillImage1").style.display = "none";
+            document.getElementById("stillImage2").style.display = "none";
+            document.body.style.backgroundImage = "url(imgs/Chapter3/Chapter3-7Addon.gif)";
+            document.body.style.backgroundRepeat = "repeat";
+
+        }
+        function button8Function(){
+            document.getElementById("button1").style.color = "white";
+            document.getElementById("button2").style.color = "white";
+            document.getElementById("button3").style.color = "white";
+            document.getElementById("button4").style.color = "white";
+            document.getElementById("button5").style.color = "white";
+            document.getElementById("button6").style.color = "white";
+            document.getElementById("button7").style.color = "white";
+            document.getElementById("button8").style.color = "blue";
+            document.getElementById("button9").style.color = "white";
+            document.getElementById("button10").style.color = "white";
+            document.getElementById("button11").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-5.png";
+            document.getElementById("roll1").style.display = "none";
+            document.getElementById("stillImage1").style.display = "none";
+            document.getElementById("stillImage2").style.display = "none";
+            document.body.style.backgroundImage = "none";
+        }
+        function button9Function(){
+            document.getElementById("button1").style.color = "white";
+            document.getElementById("button2").style.color = "white";
+            document.getElementById("button3").style.color = "white";
+            document.getElementById("button4").style.color = "white";
+            document.getElementById("button5").style.color = "white";
+            document.getElementById("button6").style.color = "white";
+            document.getElementById("button7").style.color = "white";
+            document.getElementById("button8").style.color = "white";
+            document.getElementById("button9").style.color = "blue";
+            document.getElementById("button10").style.color = "white";
+            document.getElementById("button11").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-6.png";
+            document.getElementById("roll1").style.display = "none";
+            document.getElementById("stillImage1").style.display = "none";
+            document.getElementById("stillImage2").style.display = "none";
+            document.body.style.backgroundImage = "url(imgs/Chapter3/Chapter3-6Addon.png)";
+            document.body.style.backgroundRepeat = "repeat";
+        }
+        function button10Function(){
+            document.getElementById("button1").style.color = "white";
+            document.getElementById("button2").style.color = "white";
+            document.getElementById("button3").style.color = "white";
+            document.getElementById("button4").style.color = "white";
+            document.getElementById("button5").style.color = "white";
+            document.getElementById("button6").style.color = "white";
+            document.getElementById("button7").style.color = "white";
+            document.getElementById("button8").style.color = "white";
+            document.getElementById("button9").style.color = "white";
+            document.getElementById("button10").style.color = "blue";
+            document.getElementById("button11").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-7.png";
+            document.getElementById("roll1").style.display = "none";
+            document.getElementById("stillImage1").style.display = "none";
+            document.getElementById("stillImage2").style.display = "none";
+            document.body.style.backgroundImage = "none";
+        }
+        function button11Function(){
+            document.getElementById("button1").style.color = "white";
+            document.getElementById("button2").style.color = "white";
+            document.getElementById("button3").style.color = "white";
+            document.getElementById("button4").style.color = "white";
+            document.getElementById("button5").style.color = "white";
+            document.getElementById("button6").style.color = "white";
+            document.getElementById("button7").style.color = "white";
+            document.getElementById("button8").style.color = "white";
+            document.getElementById("button9").style.color = "white";
+            document.getElementById("button10").style.color = "white";
+            document.getElementById("button11").style.color = "blue";
+            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-8.png";
+            document.getElementById("roll1").style.display = "block";
+            document.getElementById("stillImage1").style.display = "none";
+            document.getElementById("stillImage2").style.display = "none";
+            document.body.style.backgroundImage = "none";
+        }
+    </script>
+
+</body>
+</html>
