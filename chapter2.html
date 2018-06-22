@@ -5,8 +5,6 @@
         {
             margin:0;
             background-color: black;
-            background-image: url(imgs/Chapter3/Chapter3-0.1Addon.jpeg);
-            background-Repeat: repeat;
         }
         .headLine{
           position:relative;
@@ -95,48 +93,6 @@
             text-align: center;
         }
 
-        div#roll1 {
-          display: none;
-          width: 100px;
-          height: auto;
-          position: absolute;
-          z-index: 3;
-        }
-        div#roll2 {
-          display: none;
-          width: 100px;
-          height: auto;
-          position: absolute;
-          z-index: 3;
-        }
-        div#roll3 {
-          display: none;
-          width: 100px;
-          height: auto;
-          position: absolute;
-          z-index: 3;
-        }
-
-        #stillImage1 {
-          display: none;
-          position: absolute;
-          width:200px;
-          top: 10em;
-          right: -5em;
-          width: 100%;
-          height: 100%;
-          z-index: 2;
-        }
-        #stillImage2 {
-          display: none;
-          position: absolute;
-          width:200px;
-          top: 10em;
-          right: -5em;
-          width: 100%;
-          height: 100%;
-          z-index: 2;
-        }
 
     </style>
 </head>
@@ -148,13 +104,11 @@
       </a>
     </div>
 
-    <div id="stillImage1"><img src="imgs/Chapter3/Chapter3-0.3Addon.gif" ></div>
-    <div id="stillImage2"><img src="imgs/Chapter3/Chapter3-3Addon.gif" ></div>
 
 
 
     <div class="imgBox">
-        <img src = 'imgs/Chapter3/Chapter3-0.1.png' class = 'pics' id = "pic1">
+        <img src = 'imgs/Chapter2/Chapter2-1.png' class = 'pics' id = "pic1">
     </div>
 
     <div class = "outerButtonBox">
@@ -170,62 +124,32 @@
             <button class="button" id="button9" onclick="button9Function()">9</button>
             <button class="button" id="button10" onclick="button10Function()">10</button>
             <button class="button" id="button11" onclick="button11Function()">11</button>
-            <button class="button" id="button12" onclick="button11Function()">12</button>
-            <button class="button" id="button13" onclick="button11Function()">13</button>
-            <button class="button" id="button14" onclick="button11Function()">14</button>
-            <button class="button" id="button15" onclick="button11Function()">15</button>
-            <button class="button" id="button16" onclick="button11Function()">16</button>
-            <button class="button" id="button17" onclick="button11Function()">17</button>
-            <button class="button" id="button18" onclick="button11Function()">18</button>
+            <button class="button" id="button12" onclick="button12Function()">12</button>
+            <button class="button" id="button13" onclick="button13Function()">13</button>
+            <button class="button" id="button14" onclick="button14Function()">14</button>
+            <button class="button" id="button15" onclick="button15Function()">15</button>
+            <button class="button" id="button16" onclick="button16Function()">16</button>
+            <button class="button" id="button17" onclick="button17Function()">17</button>
+            <button class="button" id="button18" onclick="button18Function()">18</button>
         </div>
     </div>
 
     <div class = "noticeBox">
         <div>
             <div class="hoverImageBox">
-                <img src="imgs/Day1/Day1-2.png" class="noticePics">
+                <img src="imgs/Chapter3/Chapter3-1.png" class="noticePics">
                 <div class="overlay">
-                    <a href="https://www.w3schools.com">
-                        <div class="text">Day2</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="hoverImageBox">
-                <img src="imgs/Day1/Day1-3.png" class="noticePics">
-                <div class="overlay">
-                    <a href="https://www.w3schools.com">
-                        <div class="text">Day3</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="hoverImageBox">
-                <img src="imgs/Day1/Day1-3.png" class="noticePics">
-                <div class="overlay">
-                    <a href="https://www.w3schools.com">
-                        <div class="text">Day4</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="hoverImageBox">
-                <img src="imgs/Day1/Day1-1.png" class="noticePics">
-                <div class="overlay">
-                    <a href="https://www.w3schools.com">
-                        <div class="text">Day5</div>
+                    <a href="chapter3.html">
+                        <div class="text">Chapter3</div>
                     </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="roll1"><img src="imgs/Chapter3/Chapter3-8Addon.gif"></div>
-    <div id="roll2"><img src="imgs/Chapter3/Chapter3-8Addon.gif"></div>
-    <div id="roll3"><img src="imgs/Chapter3/Chapter3-8Addon.gif"></div>
+    <div id="roll1"><img src="imgs/Chapter2/Chapter2-8Addon.gif"></div>
+    <div id="roll2"><img src="imgs/Chapter2/Chapter2-8Addon.gif"></div>
+    <div id="roll3"><img src="imgs/Chapter2/Chapter2-8Addon.gif"></div>
 
     <script src = "src/FloatingAdsChapter3.js"></script>
 
@@ -243,12 +167,14 @@
             document.getElementById("button9").style.color = "white";
             document.getElementById("button10").style.color = "white";
             document.getElementById("button11").style.color = "white";
-            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-0.1.png";
-            document.getElementById("roll1").style.display = "none";
-            document.getElementById("stillImage1").style.display = "none";
-            document.getElementById("stillImage2").style.display = "none";
-            document.body.style.backgroundImage = "url(imgs/Chapter3/Chapter3-0.1Addon.jpeg)";
-            document.body.style.backgroundRepeat = "repeat";
+            document.getElementById("button12").style.color = "white";
+            document.getElementById("button13").style.color = "white";
+            document.getElementById("button14").style.color = "white";
+            document.getElementById("button15").style.color = "white";
+            document.getElementById("button16").style.color = "white";
+            document.getElementById("button17").style.color = "white";
+            document.getElementById("button18").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter2/Chapter2-1.png";
 
         }
         function button2Function(){
@@ -263,11 +189,14 @@
             document.getElementById("button9").style.color = "white";
             document.getElementById("button10").style.color = "white";
             document.getElementById("button11").style.color = "white";
-            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-0.2.png";
-            document.getElementById("roll1").style.display = "none";
-            document.getElementById("stillImage1").style.display = "none";
-            document.getElementById("stillImage2").style.display = "none";
-            document.body.style.backgroundImage = "none";
+            document.getElementById("button12").style.color = "white";
+            document.getElementById("button13").style.color = "white";
+            document.getElementById("button14").style.color = "white";
+            document.getElementById("button15").style.color = "white";
+            document.getElementById("button16").style.color = "white";
+            document.getElementById("button17").style.color = "white";
+            document.getElementById("button18").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter2/Chapter2-2.png";
         }
         function button3Function(){
             document.getElementById("button1").style.color = "white";
@@ -281,11 +210,14 @@
             document.getElementById("button9").style.color = "white";
             document.getElementById("button10").style.color = "white";
             document.getElementById("button11").style.color = "white";
-            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-0.3.png";
-            document.getElementById("roll1").style.display = "none";
-            document.getElementById("stillImage1").style.display = "block";
-            document.getElementById("stillImage2").style.display = "none";
-            document.body.style.backgroundImage = "none";
+            document.getElementById("button12").style.color = "white";
+            document.getElementById("button13").style.color = "white";
+            document.getElementById("button14").style.color = "white";
+            document.getElementById("button15").style.color = "white";
+            document.getElementById("button16").style.color = "white";
+            document.getElementById("button17").style.color = "white";
+            document.getElementById("button18").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter2/Chapter2-3.png";
 
         }
         function button4Function(){
@@ -300,11 +232,14 @@
             document.getElementById("button9").style.color = "white";
             document.getElementById("button10").style.color = "white";
             document.getElementById("button11").style.color = "white";
-            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-1.png";
-            document.getElementById("roll1").style.display = "none";
-            document.getElementById("stillImage1").style.display = "none";
-            document.getElementById("stillImage2").style.display = "none";
-            document.body.style.backgroundImage = "none";
+            document.getElementById("button12").style.color = "white";
+            document.getElementById("button13").style.color = "white";
+            document.getElementById("button14").style.color = "white";
+            document.getElementById("button15").style.color = "white";
+            document.getElementById("button16").style.color = "white";
+            document.getElementById("button17").style.color = "white";
+            document.getElementById("button18").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter2/Chapter2-4.png";
         }
         function button5Function(){
             document.getElementById("button1").style.color = "white";
@@ -318,12 +253,14 @@
             document.getElementById("button9").style.color = "white";
             document.getElementById("button10").style.color = "white";
             document.getElementById("button11").style.color = "white";
-            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-2.png";
-            document.getElementById("roll1").style.display = "none";
-            document.getElementById("stillImage1").style.display = "none";
-            document.getElementById("stillImage2").style.display = "none";
-            document.body.style.backgroundImage = "url(imgs/Chapter3/Chapter3-2Addon.gif)";
-            document.body.style.backgroundRepeat = "repeat";
+            document.getElementById("button12").style.color = "white";
+            document.getElementById("button13").style.color = "white";
+            document.getElementById("button14").style.color = "white";
+            document.getElementById("button15").style.color = "white";
+            document.getElementById("button16").style.color = "white";
+            document.getElementById("button17").style.color = "white";
+            document.getElementById("button18").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter2/Chapter2-5.png";
         }
         function button6Function(){
             document.getElementById("button1").style.color = "white";
@@ -337,12 +274,14 @@
             document.getElementById("button9").style.color = "white";
             document.getElementById("button10").style.color = "white";
             document.getElementById("button11").style.color = "white";
-            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-3.png";
-            document.getElementById("roll1").style.display = "none";
-            document.getElementById("stillImage1").style.display = "none";
-            document.getElementById("stillImage2").style.display = "none";
-
-            document.body.style.backgroundImage = "none";
+            document.getElementById("button12").style.color = "white";
+            document.getElementById("button13").style.color = "white";
+            document.getElementById("button14").style.color = "white";
+            document.getElementById("button15").style.color = "white";
+            document.getElementById("button16").style.color = "white";
+            document.getElementById("button17").style.color = "white";
+            document.getElementById("button18").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter2/Chapter2-6.png";
         }
         function button7Function(){
             document.getElementById("button1").style.color = "white";
@@ -356,12 +295,14 @@
             document.getElementById("button9").style.color = "white";
             document.getElementById("button10").style.color = "white";
             document.getElementById("button11").style.color = "white";
-            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-4.png";
-            document.getElementById("roll1").style.display = "none";
-            document.getElementById("stillImage1").style.display = "none";
-            document.getElementById("stillImage2").style.display = "none";
-            document.body.style.backgroundImage = "url(imgs/Chapter3/Chapter3-7Addon.gif)";
-            document.body.style.backgroundRepeat = "repeat";
+            document.getElementById("button12").style.color = "white";
+            document.getElementById("button13").style.color = "white";
+            document.getElementById("button14").style.color = "white";
+            document.getElementById("button15").style.color = "white";
+            document.getElementById("button16").style.color = "white";
+            document.getElementById("button17").style.color = "white";
+            document.getElementById("button18").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter2/Chapter2-7.png";
 
         }
         function button8Function(){
@@ -376,11 +317,14 @@
             document.getElementById("button9").style.color = "white";
             document.getElementById("button10").style.color = "white";
             document.getElementById("button11").style.color = "white";
-            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-5.png";
-            document.getElementById("roll1").style.display = "none";
-            document.getElementById("stillImage1").style.display = "none";
-            document.getElementById("stillImage2").style.display = "none";
-            document.body.style.backgroundImage = "none";
+            document.getElementById("button12").style.color = "white";
+            document.getElementById("button13").style.color = "white";
+            document.getElementById("button14").style.color = "white";
+            document.getElementById("button15").style.color = "white";
+            document.getElementById("button16").style.color = "white";
+            document.getElementById("button17").style.color = "white";
+            document.getElementById("button18").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter2/Chapter2-8.png";
         }
         function button9Function(){
             document.getElementById("button1").style.color = "white";
@@ -394,12 +338,14 @@
             document.getElementById("button9").style.color = "blue";
             document.getElementById("button10").style.color = "white";
             document.getElementById("button11").style.color = "white";
-            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-6.png";
-            document.getElementById("roll1").style.display = "none";
-            document.getElementById("stillImage1").style.display = "none";
-            document.getElementById("stillImage2").style.display = "none";
-            document.body.style.backgroundImage = "url(imgs/Chapter3/Chapter3-6Addon.png)";
-            document.body.style.backgroundRepeat = "repeat";
+            document.getElementById("button12").style.color = "white";
+            document.getElementById("button13").style.color = "white";
+            document.getElementById("button14").style.color = "white";
+            document.getElementById("button15").style.color = "white";
+            document.getElementById("button16").style.color = "white";
+            document.getElementById("button17").style.color = "white";
+            document.getElementById("button18").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter2/Chapter2-9.png";
         }
         function button10Function(){
             document.getElementById("button1").style.color = "white";
@@ -413,11 +359,14 @@
             document.getElementById("button9").style.color = "white";
             document.getElementById("button10").style.color = "blue";
             document.getElementById("button11").style.color = "white";
-            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-7.png";
-            document.getElementById("roll1").style.display = "none";
-            document.getElementById("stillImage1").style.display = "none";
-            document.getElementById("stillImage2").style.display = "none";
-            document.body.style.backgroundImage = "none";
+            document.getElementById("button12").style.color = "white";
+            document.getElementById("button13").style.color = "white";
+            document.getElementById("button14").style.color = "white";
+            document.getElementById("button15").style.color = "white";
+            document.getElementById("button16").style.color = "white";
+            document.getElementById("button17").style.color = "white";
+            document.getElementById("button18").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter2/Chapter2-10.png";
         }
         function button11Function(){
             document.getElementById("button1").style.color = "white";
@@ -431,12 +380,163 @@
             document.getElementById("button9").style.color = "white";
             document.getElementById("button10").style.color = "white";
             document.getElementById("button11").style.color = "blue";
-            document.getElementById("pic1").src = "imgs/Chapter3/Chapter3-8.png";
-            document.getElementById("roll1").style.display = "block";
-            document.getElementById("stillImage1").style.display = "none";
-            document.getElementById("stillImage2").style.display = "none";
-            document.body.style.backgroundImage = "none";
+            document.getElementById("button12").style.color = "white";
+            document.getElementById("button13").style.color = "white";
+            document.getElementById("button14").style.color = "white";
+            document.getElementById("button15").style.color = "white";
+            document.getElementById("button16").style.color = "white";
+            document.getElementById("button17").style.color = "white";
+            document.getElementById("button18").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter2/Chapter2-11.png";
         }
+        function button12Function(){
+            document.getElementById("button1").style.color = "white";
+            document.getElementById("button2").style.color = "white";
+            document.getElementById("button3").style.color = "white";
+            document.getElementById("button4").style.color = "white";
+            document.getElementById("button5").style.color = "white";
+            document.getElementById("button6").style.color = "white";
+            document.getElementById("button7").style.color = "white";
+            document.getElementById("button8").style.color = "white";
+            document.getElementById("button9").style.color = "white";
+            document.getElementById("button10").style.color = "white";
+            document.getElementById("button11").style.color = "white";
+            document.getElementById("button12").style.color = "blue";
+            document.getElementById("button13").style.color = "white";
+            document.getElementById("button14").style.color = "white";
+            document.getElementById("button15").style.color = "white";
+            document.getElementById("button16").style.color = "white";
+            document.getElementById("button17").style.color = "white";
+            document.getElementById("button18").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter2/Chapter2-12.png";
+        }
+        function button13Function(){
+            document.getElementById("button1").style.color = "white";
+            document.getElementById("button2").style.color = "white";
+            document.getElementById("button3").style.color = "white";
+            document.getElementById("button4").style.color = "white";
+            document.getElementById("button5").style.color = "white";
+            document.getElementById("button6").style.color = "white";
+            document.getElementById("button7").style.color = "white";
+            document.getElementById("button8").style.color = "white";
+            document.getElementById("button9").style.color = "white";
+            document.getElementById("button10").style.color = "white";
+            document.getElementById("button11").style.color = "white";
+            document.getElementById("button12").style.color = "white";
+            document.getElementById("button13").style.color = "blue";
+            document.getElementById("button14").style.color = "white";
+            document.getElementById("button15").style.color = "white";
+            document.getElementById("button16").style.color = "white";
+            document.getElementById("button17").style.color = "white";
+            document.getElementById("button18").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter2/Chapter2-13.png";
+        }
+        function button14Function(){
+            document.getElementById("button1").style.color = "white";
+            document.getElementById("button2").style.color = "white";
+            document.getElementById("button3").style.color = "white";
+            document.getElementById("button4").style.color = "white";
+            document.getElementById("button5").style.color = "white";
+            document.getElementById("button6").style.color = "white";
+            document.getElementById("button7").style.color = "white";
+            document.getElementById("button8").style.color = "white";
+            document.getElementById("button9").style.color = "white";
+            document.getElementById("button10").style.color = "white";
+            document.getElementById("button11").style.color = "white";
+            document.getElementById("button12").style.color = "white";
+            document.getElementById("button13").style.color = "white";
+            document.getElementById("button14").style.color = "blue";
+            document.getElementById("button15").style.color = "white";
+            document.getElementById("button16").style.color = "white";
+            document.getElementById("button17").style.color = "white";
+            document.getElementById("button18").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter2/Chapter2-14.png";
+        }
+        function button15Function(){
+            document.getElementById("button1").style.color = "white";
+            document.getElementById("button2").style.color = "white";
+            document.getElementById("button3").style.color = "white";
+            document.getElementById("button4").style.color = "white";
+            document.getElementById("button5").style.color = "white";
+            document.getElementById("button6").style.color = "white";
+            document.getElementById("button7").style.color = "white";
+            document.getElementById("button8").style.color = "white";
+            document.getElementById("button9").style.color = "white";
+            document.getElementById("button10").style.color = "white";
+            document.getElementById("button11").style.color = "white";
+            document.getElementById("button12").style.color = "white";
+            document.getElementById("button13").style.color = "white";
+            document.getElementById("button14").style.color = "white";
+            document.getElementById("button15").style.color = "blue";
+            document.getElementById("button16").style.color = "white";
+            document.getElementById("button17").style.color = "white";
+            document.getElementById("button18").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter2/Chapter2-15.png";
+        }
+        function button16Function(){
+            document.getElementById("button1").style.color = "white";
+            document.getElementById("button2").style.color = "white";
+            document.getElementById("button3").style.color = "white";
+            document.getElementById("button4").style.color = "white";
+            document.getElementById("button5").style.color = "white";
+            document.getElementById("button6").style.color = "white";
+            document.getElementById("button7").style.color = "white";
+            document.getElementById("button8").style.color = "white";
+            document.getElementById("button9").style.color = "white";
+            document.getElementById("button10").style.color = "white";
+            document.getElementById("button11").style.color = "white";
+            document.getElementById("button12").style.color = "white";
+            document.getElementById("button13").style.color = "white";
+            document.getElementById("button14").style.color = "white";
+            document.getElementById("button15").style.color = "white";
+            document.getElementById("button16").style.color = "blue";
+            document.getElementById("button17").style.color = "white";
+            document.getElementById("button18").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter2/Chapter2-16.png";
+        }
+        function button17Function(){
+            document.getElementById("button1").style.color = "white";
+            document.getElementById("button2").style.color = "white";
+            document.getElementById("button3").style.color = "white";
+            document.getElementById("button4").style.color = "white";
+            document.getElementById("button5").style.color = "white";
+            document.getElementById("button6").style.color = "white";
+            document.getElementById("button7").style.color = "white";
+            document.getElementById("button8").style.color = "white";
+            document.getElementById("button9").style.color = "white";
+            document.getElementById("button10").style.color = "white";
+            document.getElementById("button11").style.color = "white";
+            document.getElementById("button12").style.color = "white";
+            document.getElementById("button13").style.color = "white";
+            document.getElementById("button14").style.color = "white";
+            document.getElementById("button15").style.color = "white";
+            document.getElementById("button16").style.color = "white";
+            document.getElementById("button17").style.color = "blue";
+            document.getElementById("button18").style.color = "white";
+            document.getElementById("pic1").src = "imgs/Chapter2/Chapter2-17.png";
+        }
+        function button18Function(){
+            document.getElementById("button1").style.color = "white";
+            document.getElementById("button2").style.color = "white";
+            document.getElementById("button3").style.color = "white";
+            document.getElementById("button4").style.color = "white";
+            document.getElementById("button5").style.color = "white";
+            document.getElementById("button6").style.color = "white";
+            document.getElementById("button7").style.color = "white";
+            document.getElementById("button8").style.color = "white";
+            document.getElementById("button9").style.color = "white";
+            document.getElementById("button10").style.color = "white";
+            document.getElementById("button11").style.color = "white";
+            document.getElementById("button12").style.color = "white";
+            document.getElementById("button13").style.color = "white";
+            document.getElementById("button14").style.color = "white";
+            document.getElementById("button15").style.color = "white";
+            document.getElementById("button16").style.color = "white";
+            document.getElementById("button17").style.color = "white";
+            document.getElementById("button18").style.color = "blue";
+            document.getElementById("pic1").src = "imgs/Chapter2/Chapter2-18.png";
+        }
+        
     </script>
 
 </body>
