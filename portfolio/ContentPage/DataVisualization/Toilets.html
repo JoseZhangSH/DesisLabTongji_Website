@@ -49,25 +49,24 @@
     
     <div class="col-sm-8">
 	    <div class="content">
-			<div class="content-title">City Breath</div>
-			<div class="content-subtitle">Data Visualization, Motion Design <br> Personal Project <br> 2018.6</div>
-			<div class="content-text">This is a project I did for China VISAP'18 Art Program with two friends. My main role in this project is data collecting, data mining, data visualization and motion design.<br>At first I found Air Quality Index(AQI) data of most cities in China in the data center website of Ministry of Ecology and Environment of China. </div>
-			<img src="../../img/DataVisualization/Content/1.png"></img>
-			<div class="content-text">I dowloaded data from Jan 2015 to May 2018. They are separately dowloaded in the max length of 1 month. So I tried to write a python script to merge them together.</div>
-			<img src="../../img/DataVisualization/Content/2.png"></img>
-			<div class="content-text">AQI is calculated according to five major air pollutants: ground-level ozone, particle pollution (also known as particulate matter), carbon monoxide, sulfur dioxide, and nitrogen dioxide.  For each of these pollutants, I made an individual file for further visualization. </div>
-			<img src="../../img/DataVisualization/Content/3.png"></img>
-			<div class="content-text">However, at this stage, I found many blanks in the excel file because of the lack of data recording in some cities.</div>
-			<img src="../../img/DataVisualization/Content/4.png"></img>
-			<div class="content-text">So I tried to use Panda library to fill them, but I was new to Python and didn't get it work. So my teacher and friend help me with this. In the meantime, we collected latitude and longitude data of each city. <br>Then it came the most difficult part. The cities'name in the two files didn't perfectly match. So I used tableau to connect two files with the "name" column, and found out the differences and fixed them by hand. <br> At this stage, I managed to plot the data using processing.</div>
-			<img src="../../img/DataVisualization/Content/5.gif"></img>
-			<div class="content-text">Finally it came our design part. All of us need to breathe, and AQI data shows the quality of city's breath. When we are introducing a city to friends, we always show them Polaroids we take with the beautiful scenery or delicious food. But we often ignore that the air is also an important characteristic of the city. So why not design a set of postcards or Polaroids for cities using their AQI data?<br>It occurred to me that AE cc2018 had support for data-driven animation. So I converted the files into json and used AE script to do some experiments.</div>
-			<img src="../../img/DataVisualization/Content/6.gif"></img>
-			<img src="../../img/DataVisualization/Content/7.gif"></img>
-			<div class="content-text">Below is our final output.</div>
-			<iframe width="900" height="506.25" src="https://www.youtube.com/embed/FJQw_ldgWvs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-			<img src="../../img/DataVisualization/Content/8.png"></img>
-			<img src="../../img/DataVisualization/Content/9.png"></img>
+			<div class="content-title">Toilets Around<br> South Shanxi Road</div>
+			<div class="content-subtitle">Data Visualization, Filed Study <br> School Project <br> 2017.7</div>
+			<div class="content-text">Public toilets is one of the most important public facilities in the city，and they reveal the level of civilization and livability of the city. We did a research about toilets around South Shanxi Road and Changshu Road, hoping to find out the current situation of toilets in that area. <br>First we searched about the positions of public toilets in Baidu Map App and marked them down. But when we went there we found that the information in software had some mistakes. So we did several site visits to find out the exact positions of all the public toilets. </div>
+			<img src="../../img/DataVisualization/Content/3-2.png"></img>
+			<img src="../../img/DataVisualization/Content/3-3.png"></img>
+			<div class="content-text">Then at every toilet, we asked the cleaner for the facility hours. We compared these data with the timetable of subway, and found that most public toilets open after the first subway and close before the last subway. We thought that may cause some problems.</div>
+			<img src="../../img/DataVisualization/Content/3-4.png"></img>
+			<div class="content-text">We also counted the amount of different kinds of toilets and made a catalog map for them. The catalog has toilet for men, women, uni-sex which can be divided into urinal, squat toilet and western toilet, and toilets for disabled people which can be divided into urinal and western toilet.Among them, 3 toilets hadn’t taken disabled people into consideration. According to the map, we can find that most public toilet supplies are located around South Shanxi Road.</div>
+			<img src="../../img/DataVisualization/Content/3-5.png"></img>
+			<div class="content-text">Based on these data above, we assumed  that the average using time is 5 minutes and vacancy rate is 5% to estimate the bearing capacity of each toilet, and combined these data with the facility hours to make a diagram showing the change of public toilets supplies in this area during the day.
+	We made isovist map for every toilet to see where we can easily find it. And we take screenshot of the heatmap in Baidu Map App every hour. To remove useless information such as road names and other texts, we roughly redrew the heatmaps with Illustrator and Photoshop. Then we cut the heatmaps with isovist area and overlapped them after printing them with parchment paper. This shows the flow of people in the isovist area during the day. </div>
+	<img src="../../img/DataVisualization/Content/3-6.png"></img>
+	<img src="../../img/DataVisualization/Content/3-7.png"></img>
+	<div class="content-text">Based on this, we roughly drew a curve to represent the change of demand for public toilets, and compared it with the supplies diagram. We found that because the number of people increased quickly at 9 am, but supply didn’t increase until 10 am, the demand curve is really close to supply line from 9 am to 10 am. So during this time the supply will probably be insufficient. For this part, we didn’t have valid data, and the diagram only shows the variation tendency we  observed from the heatmaps.</div>
+	<img src="../../img/DataVisualization/Content/3-8.png"></img>
+	<img src="../../img/DataVisualization/Content/3-9.png"></img>
+	<div class="content-text">To further this study, we may go more deeply into the catalog part, gather more information about the different users of public toilets to make user profiles and to see if there are something we can do to enhance user experience.</div>
+
 
 	    </div>
 	</div>
