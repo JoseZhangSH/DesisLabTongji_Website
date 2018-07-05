@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <title>Jose Zhang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../src/bootstrap.min.css">
+  <link rel="stylesheet" href="../../src/index.css">
+  <script src="../../src/jquery.js"></script>
+  <script src="../../src/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4" >
+	    <div class="sticky" >
+			<div class="nav-title">Jose Zhang</div>
+			<div class="nav-title-cn">张何辛</div>
+			<img class="profile" src="../../img/Profile.png" ></img>
+			<div class="nav-subtitle">Digital Media <br> Designer & Enthusiast</div>
+			
+			<svg height="14px" width="500">
+				<line x1="0" y1="0" x2="200" y2="0" style="stroke:#CAC2B4;stroke-width:0.9;" />
+			</svg>
+			
+			<ul style="list-style-type:none">
+			  <a href="../../DataVisualization.html"><li>Data Visualization</li></a>
+			  <a href="../../InteractionDesign.html"><li style="color:#F5A623;">Interaction Design</li></a>
+			  <a href="../../SpeculativeDesign.html"><li>Speculative Design</li></a>
+			  <a href="../../MotionDesign.html"><li>Motion Design</li></a>
+		
+			  <a href="../../UserResearch.html"><li>User Research</li></a>
+			  <a href="../../GraphicDesign.html"><li>Graphic Design</li></a>
+			</ul>
+			
+			<svg height="14px" width="500">
+				<line x1="0" y1="0" x2="200" y2="0" style="stroke:#CAC2B4;stroke-width:0.9;" />
+			</svg>
+			
+			<ul style="list-style-type:none">
+			   <a href="../../About.html"><li>About</li></a>
+			</ul>
+			
+
+	    </div>		
+    </div>
+    
+    <div class="col-sm-8">
+	    <div class="content">
+			<div class="content-title">Drum Dance</div>
+			<div class="content-subtitle">Kinect Interaction Projection<br> School Project <br> 2016.3</div>
+			<div class="content-text">The concept is using body movements as input to trigger drum sounds and motion graphics. Instead of holding a pair of drumstick, you can wave your hands directly to make drum sound.<br><br>Concept & Construction </div>
+			<img src="../../img/InteractionDesign/Content/2-1.png"></img>
+			<div class="content-text"><br>Photos</div>
+			<img src="../../img/InteractionDesign/Content/2-2.png"></img>
+			<img src="../../img/InteractionDesign/Content/2-3.png"></img>
+			<img src="../../img/InteractionDesign/Content/2-4.png"></img>
+			<div class="content-text"><br>Demo Video</div>
+			<iframe width="900" height="506" src="https://www.youtube.com/embed/YEZajC7aoHE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			
+				<div class="content-text"></div>
+	    </div>
+	</div>
+	
+  </div>
+</div>
+
+<script>
+    $(".nav-title").hover(function(){
+	    $(".profile").css("display", "block");
+        }, function(){
+        $(".profile").css("display", "none");
+    });
+</script>
+
+</body>
+</html>

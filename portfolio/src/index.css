@@ -1,0 +1,109 @@
+body {
+	margin: 0;
+	background-color: black;
+}
+
+.profile{
+	display: none;
+}
+
+.col-sm-4{
+	margin-left: -95px;
+}
+
+.sticky{
+	margin-top: 50px;
+	position: sticky;
+	position: -webkit-sticky;
+	top:50px;
+}
+
+.nav-title{	
+	font-family: 'Roboto-Bold';
+	font-size: 32px;
+	line-height: 39px;
+	letter-spacing: 1px;	
+	color: #F5A623;
+}
+
+.nav-title-cn{	
+	font-family: 'Roboto-Bold';
+	font-size: 32px;
+	line-height: 39px;
+	color: #F5A623;
+	margin-bottom: 14px;
+}
+
+.nav-subtitle{
+	/* Digital Media Design: */
+	font-family: 'Roboto-Regular';
+	font-size: 18px;
+	color: #CAC2B4;
+	letter-spacing: 0.04px;
+	line-height: 24px;	
+	margin-bottom: 22px;
+}
+
+ul{
+	margin-left: -40px;	
+}
+
+li{
+	font-family: 'Roboto-Regular';
+	font-size: 15px;
+	color: #CAC2B4;
+	letter-spacing: 0.03px;
+	line-height: 27px;
+}
+
+.content{
+	padding-top:55px;
+}
+
+.content-title{
+	/* Takeaway Utopia: */
+	font-family: 'Roboto-Bold';
+	font-size: 48px;
+	color: #F5A623;
+	letter-spacing: 0.07px;
+	line-height: 52px;
+	margin-bottom: 28px;
+}
+
+.content-subtitle{
+	/* Web Design, Speculat: */
+	font-family: 'Roboto-Regular';
+	font-size: 18px;
+	color: #9B9B9B;
+	letter-spacing: 0.03px;
+	line-height: 27px;
+	margin-bottom: 28px;
+}
+.content-text{
+	/* The idea to drop lea: */
+	margin-top: 15px;
+	font-family: Roboto-Regular;
+	font-size: 16px;
+	color: #FFFFFF;
+	letter-spacing: 0.07px;
+	margin-bottom: 15px;
+}
+
+.cover-title{
+	margin-top: 28px;
+	font-family: Roboto-Medium;
+	font-size: 32px;
+	color: #F5A623;
+	letter-spacing: 0.03px;
+	line-height: 42px;
+	margin-bottom: 11px;
+}
+
+.cover-subtitle{
+	font-family: Roboto-Medium;
+	font-size: 18px;
+	color: #9B9B9B;
+	letter-spacing: 0.03px;
+	line-height: 27px;
+	margin-bottom: 90px;
+}
